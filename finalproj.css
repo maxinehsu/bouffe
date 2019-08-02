@@ -32,3 +32,20 @@ li a:hover, li a:hover:not(.active) {
 .navbar {
   font-family: "Nunito", sans-serif;
 }
+
+.text {
+  font-family: "Nunito", sans-serif;
+  text-decoration-color: black;
+  text-align: center;
+  background-color: white;
+}
+
+#paragraph {
+  font-family: "Nunito", sans-serif;
+  text-decoration-color: black;
+  width: 825px;
+  height: 300px;
+  text-align: justify;
+  margin: 0 auto;
+  background-color: white;
+}
