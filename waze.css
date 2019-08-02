@@ -1,0 +1,17 @@
+body {
+  background-image: url("color.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+.text {
+  text-decoration-color: black;
+  font-family: "Nunito", sans-serif;
+}
+
+.form {
+  position: relative;
+  text-align: center;
+}
