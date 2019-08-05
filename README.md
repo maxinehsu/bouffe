@@ -1,5 +1,4 @@
 # bouffe.github.io
-Final project for Girls Who Code's 2019 Summer Immersion Program
 
 This was a project created by Kate C., Maxine H., and Nola K. in the final two weeks of the 2019 Girls Who Code Summer Immersion Program.
 Initially meant to be an iOS app, then an Android app, it is now a partially-functioning website meant to help foodies with food navigation
