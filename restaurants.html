@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3 /4/w3.css">
+<link rel = "stylesheet" href="restaurants.css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<head>
+  <style>
+    body {
+      font-family: "Oswald";
+      font-size: 25px;
+    }
+    titlestyle {
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class = "w3-bar w3-black">
+  </nav>
+  <div class = "background">
+    <strong> <center> <p class = "title"> Find Your Bouffe </p></center> </strong>
+  </div>
+<section>
+<br></br>
+<p><center> Type in the city you want to find restaurants for </center></p>
+<input type='text' id = 'userInput'></input>
+<button id='submitter' onclick='first_function()'> Find healthy food options!</button>
+<div id = 'city_results'> </div>
+  <br> </br>
+    <div id = "city">
+    </div>
+    <script src = "restaurants.js"></script>
+    <br></br>
+    <br></br>
+</section>
+  </body>
+</html>
+  <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+<i> <p> Supported by <a href = "https://developers.zomato.com/api">Zomato</a>
+  </p></i>
+  </footer>
