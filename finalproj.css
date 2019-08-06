@@ -1,29 +1,11 @@
-/* NOLA'S CODE */
+/* navbar */
 
-/* .bg-image-full {
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+html, body {
+  margin: 0;
+  width: 100%;
+  padding: 0px;
+  overflow-x: hidden;
 }
-
-py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-} */
-
-/* MY CODE */
-/* body {
-  background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-section {
-  display: block;
-} */
 
 ul {
   list-style-type: none;
@@ -58,7 +40,19 @@ li a:hover, li a:hover:not(.active) {
 
 .navbar {
   font-family: "Nunito", sans-serif;
+  position: sticky;
+  top: 0px;
 }
+
+.navbar #logo {
+  font-family: "Courgette", cursive;
+  float: left;
+  padding-left: 100px;
+  font-size: 17px;
+}
+
+
+/* text */
 
 .text {
   padding: 10px;
@@ -91,22 +85,30 @@ div {
   display: block;
 }
 
-.about-me {
+
+/* "about us" section */
+
+.about-us {
   width: 100%;
-  padding-bottom: 10px;
 }
 
-.about-me h2 {
+.about-us:after {
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.about-us h2 {
   color: black;
   text-align: center;
   position: relative;
 }
 
-.about-me h2:after{
+.about-us h2:after {
   content: '';
   position: absolute;
   width: 80px;
-  height: 2px;
+  height: 1px;
   margin-left: -40px;
   left: 50%;
   bottom: 0px;
@@ -114,29 +116,67 @@ div {
   top: 53px;
 }
 
-.about-me .col-left, .about-me .col-right {
+.about-us h4 {
+  text-align: left;
+  font-size: 20px;
+  top: 0px;
+}
+
+.about-us .col-left, .about-us .col-right {
   width: 50%;
   float: left;
 }
 
-.about-me .col-left {
-  padding-left: 5%;
-  padding-right: 5%;
-  max-width: 100%;
+.about-us .col-left {
+  max-width: 75%;
+  max-height: 75%;
 }
 
-/* .about-me .col-left {
-  max-width: 100%;
-} */
+#about-us-img {
+  padding-top: 30px;
+  padding-left: 150px;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.about-us #about-us-p {
+  left: 0px;
+  right: 20px;
+}
+
+#about-us-p {
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  text-decoration-color: black;
+  width: 550px;
+  height: 100px;
+  text-align: justify;
+  top: 50px;
+  right: 150px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 500px 500px 500px;
+  grid-gap: 5px;
+  background-color: white;
+  padding: 5px;
+  width: 100%;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+/* header images */
 
 header > img {
   height: 450px;
   width: 100%;
   object-fit: cover;
-}
-
-#img-circle {
-  width: 30%;
-  height: auto;
-  border-radius: 50%;
 }
