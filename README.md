@@ -6,7 +6,7 @@ in local areas or in unfamiliar territory.
 
 To put things simply, it was intended to be a more advanced version of Yelp.
 
-Several APIs were used, including Waze and Zomato, and the entire project was coded using HTML, CSS, and JavaScript. Extensive research
+Several SDKs and APIs were used, including Waze and Zomato (respectively), and the entire project was coded using HTML, CSS, and JavaScript. Extensive research
 through the realms of Google, YouTube, Stack Overflow, and W3Schools was utilized to construct a patchwork of APIs, navigation bars, sign-in
 pages, random food-related images, and text.
 
