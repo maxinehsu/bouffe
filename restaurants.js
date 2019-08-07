@@ -17,7 +17,7 @@ function my_function(city_number){
     for (i=0; i<(data['restaurants']).length; i++){
 
       var paragraph = document.createElement("div");
-      var title = document.createElement('h1');
+      var title = document.createElement('h5');
       title.innerHTML = data["restaurants"][i]['restaurant']['name'];
       var a = document.createElement('a');
       a.setAttribute('href', data['restaurants'][i]['restaurant']['url']);
@@ -49,8 +49,8 @@ function first_function() {
     var location_data = JSON.parse(this.response);
     var element = document.getElementById("city_results");
 
-    var title = document.createElement('h1');
-    title.innerHTML = "Choose your city";
+    var title = document.createElement('h5');
+    title.innerHTML = "Choose your city: ";
     element.appendChild(title);
 
     console.log(location_data);
