@@ -86,7 +86,87 @@ div {
 }
 
 
-/* "about us" section */
+/* "find" page */
+
+/* section {
+  margin: 0 auto;
+}
+
+#userInput {
+  width: 80%;
+  height: 50px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+} */
+
+button {
+  background-color: #ff6e6e;
+  border: none;
+  color: white;
+  padding: 15px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 17px; */
+}
+
+button:hover {
+  background-color: #DE6262;
+}
+
+input {
+  padding: 10px 15px;
+}
+
+love {
+  color: white;
+  font-size: 25px;
+}
+
+section {
+  font-size: 80px;
+  margin: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  height: 45px;
+  padding: 10px;
+  background: #ff6e6e;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #DE6262;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* "about us" page */
 
 .about-us {
   width: 100%;
@@ -135,8 +215,8 @@ div {
 #about-us-img {
   padding-top: 30px;
   padding-left: 150px;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 75%;
+  max-height: 75%;
 }
 
 .about-us #about-us-p {
@@ -148,7 +228,7 @@ div {
   font-family: "Nunito", sans-serif;
   font-size: 17px;
   text-decoration-color: black;
-  width: 550px;
+  width: 500px;
   height: 100px;
   text-align: justify;
   top: 50px;
@@ -158,11 +238,12 @@ div {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 100px 500px 500px;
+  grid-template-rows: 100px 400px 400px;
   grid-gap: 5px;
   background-color: white;
   padding: 5px;
   width: 100%;
+  padding-top: 20px;
 }
 
 .grid-container > div {
