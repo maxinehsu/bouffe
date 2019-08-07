@@ -1,5 +1,3 @@
-restaurants.js
-
 function my_function(city_number){
 
   var request = new XMLHttpRequest();
@@ -10,7 +8,8 @@ function my_function(city_number){
   request.onload = function() {
 
     var data = JSON.parse(this.response);
-    document.getElementById('city').innerHTML = "Healthy restaurants: <br>";
+    // document.getElementById('city').innerHTML = "Healthy restaurants: <br>";
+    document.getElementById('city').innerHTML = "Nearby restaurants: <br>";
     console.log(data);
     var element = document.getElementById("city_results");
     element.innerHTML = "";
@@ -25,8 +24,8 @@ function my_function(city_number){
       a.setAttribute('target', '_blank');
       a.innerHTML = data['restaurants'][i]['restaurant']['name'] + ' Zomato Review';
       var node = document.createElement('p');
-      node.innerHTML = data['restaurants'][i]['restaurant']['location']['address']
-      +'<br>'+data['restaurants'][i]['restaurant']['cuisines']+'<br>'+'price range (out of five): '+data['restaurants'][i]['restaurant']['price_range'];
+      node.innerHTML = data['restaurants'][i]['restaurant']['location']['address'];
+      // +'<br>'+data['restaurants'][i]['restaurant']['cuisines']+'<br>'+'price range (out of five): '+data['restaurants'][i]['restaurant']['price_range'];
       paragraph.appendChild(title);
       paragraph.appendChild(a);
       paragraph.appendChild(node);
@@ -44,20 +43,17 @@ function first_function() {
   var city_input = document.getElementById('userInput').value;
 
   location_request.open('GET', 'https://developers.zomato.com/api/v2.1/cities?q='+ city_input, true);
+  // alert("this is a test hahahahahahah");
   location_request.setRequestHeader('user-key', '7ddaef512f6d3c427138b1b65ca989ed');
   location_request.onload = function() {
     var location_data = JSON.parse(this.response);
     var element = document.getElementById("city_results");
 
     var title = document.createElement('h1');
-    title.innerHTML = "Choose your city"
+    title.innerHTML = "Choose your city";
     element.appendChild(title);
 
-
-
     console.log(location_data);
-
-
 
     for (i=0; i<(location_data['location_suggestions']).length; i++){
       var location_name = location_data['location_suggestions'][i]['name'];
@@ -69,11 +65,21 @@ function first_function() {
       node.innerHTML = location_name;
       element.appendChild(node);
       element.innerHTML += '<br>';
-
   }
-
-
-
 }
 location_request.send();
 }
+
+// Get the input field
+var input = document.getElementById("myInput");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("myBtn").click();
+  }
+});
