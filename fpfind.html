@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="finalproj.css" type="text/css">
-  <!-- <script src="finalproject.js" type="text/javascript"></script>  <title>Bouffe !</title> -->
+  <link rel="stylesheet" href= "waze.css" type="text/css">
+  <!-- <link rel="stylesheet" href="restaurants.css" type="text/css"> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3 /4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="restaurants.js"></script>
+  <!-- <script src="fpfind.js"></script> -->
+  <title>Bouffe !</title>
 </head>
 
 <body>
@@ -25,21 +32,39 @@
     <img src="https://www.ahstatic.com/photos/5555_rsr001_01_p_1024x768.jpg" alt="Restaurant setting">
   </header>
 
-  <center>
-    <div class="text about-us">
-      <h2>Find Your Bouffe !</h2>
-    </div>
-    <div id="paragraph">
-      <p>Find restaurants and eateries below by copying and pasting their addresses into the search bar below!</p>
-    </div>
-  </center>
-  <link rel="stylesheet" href= "waze.css" type="text/css">
-
-  <div class="form">
-    <iframe src="https://embed.waze.com/iframe?zoom=12&lat=45.6906304&lon=-120.810983" width="1000" height="500"></iframe>
+  <!-- <div class="text about-us">
+    <h2>Find Your Bouffe !</h2>
   </div>
+  <section>
+    <div id="paragraph">
+      <input type="text" id="userInput" placeholder="Search by city">
+      <button id="submitter" onclick="first_function()"><i class="fa fa-search"></i></button>
+      <div id="city_results"></div>
+      <div id="city"></div>
+    </div>
+  </section> -->
+
+  <div class="text about-us">
+    <h2>Find Your Bouffe !</h2>
+  </div>
+  <section>
+    <div id="paragraph">
+      <!-- <form class="example" action="restaurants.js"> -->
+        <input type="text" id="userInput" placeholder="Search by city" name="search"></input>
+        <button type="submit" id="submitter" onclick="first_function()"><i class="fa fa-search"></i></button>
+        <div id="city_results"></div>
+      <!-- </form> -->
+    </div>
+    <div id="city"></div>
+  </section>
+
+  <!-- <div class="form">
+    <iframe src="https://embed.waze.com/iframe?zoom=12&lat=45.6906304&lon=-120.810983" width="1000" height="500"></iframe>
+  </div> -->
 
   <div id="bottom-padding"></div>
 
 </body>
 </html>
+</html>
+
