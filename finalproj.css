@@ -101,21 +101,58 @@ div {
 
 button {
   background-color: #ff6e6e;
-  border: none;
+  /* border: none; */
   color: white;
-  padding: 15px 27px;
+  /* padding: 15px 27px; */
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   /* font-size: 17px; */
+  float: left;
+  width: 20%;
+  height: 45px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
 }
+
+/* button #submitter {
+  width: 20%;
+} */
 
 button:hover {
   background-color: #DE6262;
 }
 
+#city_results {
+  width: 200%;
+}
+
+#city {
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  padding-left: 170px;
+}
+
 input {
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+input::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 love {
@@ -132,7 +169,7 @@ section {
   box-sizing: border-box;
 }
 
-form.example input[type=text] {
+/* form.example input[type=text] {
   padding: 10px;
   font-family: "Nunito", sans-serif;
   font-size: 17px;
@@ -140,9 +177,9 @@ form.example input[type=text] {
   float: left;
   width: 80%;
   background: white;
-}
+} */
 
-form.example button {
+/* form.example button {
   float: left;
   width: 20%;
   height: 45px;
@@ -153,16 +190,21 @@ form.example button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
-}
+} */
 
-form.example button:hover {
+/* form.example button:hover {
   background: #DE6262;
-}
+} */
 
-form.example::after {
+/* form.example::after {
   content: "";
   clear: both;
   display: table;
+} */
+
+h5 {
+  font-size: 25px;
+  text-align: left;
 }
 
 
@@ -241,15 +283,15 @@ form.example::after {
   grid-template-rows: 100px 400px 400px;
   grid-gap: 5px;
   background-color: white;
-  padding: 5px;
+  padding: 0px;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .grid-container > div {
   background-color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 
@@ -260,3 +302,4 @@ header > img {
   width: 100%;
   object-fit: cover;
 }
+
